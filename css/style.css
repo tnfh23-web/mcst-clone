@@ -357,9 +357,7 @@ header .main-menu .main-menu-grid .menu-list > li.menu-active .depth-wrap {
 /* 섹션 1 시작 */
 
 .sec-1 {
-  background-image:
-    linear-gradient(90deg, rgba(42, 123, 155, 0.23) 0%, rgba(87, 199, 133, 0.2) 50%, rgba(83, 170, 237, 0.23) 100%),
-    url(../img/sec-1/bg_pattern_top_slides.png);
+  background-image: linear-gradient(90deg, rgba(42, 123, 155, 0.23) 0%, rgba(87, 199, 133, 0.2) 50%, rgba(83, 170, 237, 0.23) 100%), url(../img/sec-1/bg_pattern_top_slides.png);
   background-repeat: repeat;
 }
 
@@ -589,6 +587,7 @@ header .main-menu .main-menu-grid .menu-list > li.menu-active .depth-wrap {
   height: 100%;
   font-size: 1.9rem;
   font-weight: 700;
+  padding: 0 10px;
 }
 .sec-2-grid .tab-head > li > a::before {
   content: "";
