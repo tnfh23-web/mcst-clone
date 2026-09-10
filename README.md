@@ -11,20 +11,16 @@
 
 ## 실행
 
-빌드나 패키지 설치 없이 정적 서버에서 실행합니다.
-
-```sh
-python -m http.server 4173
-```
-
-http://localhost:4173 에 접속합니다.
+별도의 백엔드나 빌드 과정이 없습니다. index.html을 브라우저에서 열거나 VS Code의 Live Server로 실행합니다. 서버·DB·API를 구현하지 않았습니다.
 
 ## 배포와 검증
+
+검사 스크립트는 GitHub Actions에서만 사용하는 JavaScript 도구이며 사이트에 배포하지 않습니다.
 
 `main` 푸시 시 GitHub Actions가 로컬 자산과 링크를 검사한 뒤 GitHub Pages를 자동 갱신합니다. 배포에는 `index.html`, `css`, `js`, `img`, `font`만 포함합니다.
 
 ```sh
-python scripts/check.py
+node scripts/check.mjs
 node --check js/script.js
 ```
 
@@ -33,4 +29,3 @@ node --check js/script.js
 기존 이미지·본문을 유지하고 필요한 원본 아이콘, 모바일 슬로건, 표시 설정 이미지와 글꼴을 추가했습니다. 추가 자산 출처는 `ASSETS.json`에 기록했습니다. 이미지·로고·글꼴·본문의 권리는 해당 권리자에게 있으며 이 저장소는 별도의 권리를 주장하지 않습니다.
 
 원본과 같은 Pretendard GOV 서브셋 글꼴을 사용하여 초기 글꼴 전송량을 약 4.16 MB에서 0.53 MB로 줄였습니다. 기존 전체 글꼴은 보존하되 로딩하지 않습니다. 본문 이미지는 지연 로딩하며 모든 실행 자산은 로컬 경로를 사용합니다.
-

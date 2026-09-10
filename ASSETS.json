@@ -66,6 +66,11 @@
       "file": "img/original/ico_swiper_play.svg",
       "url": "https://www.mcst.go.kr/site/images/icon/ico_swiper_play.svg",
       "bytes": 445
+    },
+    {
+      "file": "img/original/slogan_mob.svg",
+      "url": "https://www.mcst.go.kr/site/images/common/slogan_mob.svg",
+      "bytes": 9750
     }
   ],
   "existing": "기존 img/ 및 font/ 자산 보존"
