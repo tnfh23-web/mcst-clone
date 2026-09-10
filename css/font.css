@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Pretendard GOV";
+    font-weight: 400;
+    font-display: swap;
+    src: local("Pretendard GOV Regular"),
+         url("../font/PretendardGOV-Regular.subset.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Pretendard GOV";
+    font-weight: 700;
+    font-display: swap;
+    src: local("Pretendard GOV Bold"),
+         url("../font/PretendardGOV-Bold.subset.woff2") format("woff2");
+}

@@ -1,0 +1,1536 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문화체육관광부 클론</title>
+<meta name="description" content="문화체육관광부 홈페이지 클론 코딩 프로젝트. 공식 서비스가 아닌 학습용 정적 화면입니다." />
+<link rel="icon" href="img/header/header_notice_img.svg" type="image/svg+xml" />
+
+    <!-- 폰트 css -->
+    <link rel="stylesheet" href="css/font.css" />
+    <!-- 리셋 css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 스와이퍼 라이브러리 css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- 스타일 css -->
+    <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/refinements.css" />
+  </head>
+
+  <body>
+    <!---------------------------------- notice 시작 ------------------------------------>
+    <div class="notice-bar">
+      <div class="notice-grid">
+        <span>이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+      </div>
+    </div>
+    <!---------------------------------- notice 끝 ------------------------------------>
+
+    <!---------------------------------- header 시작 ------------------------------------>
+    <header>
+      <div class="header-grid">
+        <div class="header-utility">
+          <ul class="utility-list">
+            <li class="utility-box utility-box-1"><a href="#" class="utility-go">어린이 누리집</a></li>
+            <li class="utility-box utility-box-2"><button type="button" class="utility-global">언어변경</button></li>
+            <li class="utility-box utility-box-3"><button type="button" class="utility-view">글자·화면 설정</button></li>
+          </ul>
+        </div>
+        <div class="header-branding">
+          <div class="logo-box">
+            <a class="logo" href="#">
+              <span class="sr-only">문화체육관광부</span>
+            </a>
+            <a class="slogan" href="#" title="국정과제 누리집 바로가기 새 창 열림">
+              <span class="sr-only">국민이 주인인 나라, 함께 행복한 대한민국</span>
+            </a>
+          </div>
+          <div class="log-box">
+<button type="button" class="log-item all-menu" aria-controls="all-menu-dialog" aria-expanded="false">전체메뉴</button>
+            <button type="button" class="log-item sch">통합검색</button>
+            <a href="#" class="log-item login">들어가기</a>
+            <a href="#" class="log-item join">회원가입</a>
+          </div>
+        </div>
+      </div>
+      <nav class="main-menu">
+        <div class="main-menu-grid">
+          <ul class="menu-list">
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-0">정보공개</button><div class="depth-wrap" id="menu-0" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="depth-active">
+<button type="button" aria-expanded="true" aria-controls="menu-0-0">정보공개안내</button>
+</li>
+<li class="">
+<a href="#" class="bgnone">사전정보공개</a>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-0-2">재정정보</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-0-3">공공데이터개방</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-0-4">감사·청렴자료</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-0-5">정책실명제</button>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel depth-active" id="menu-0-0">
+<h2>정보공개안내</h2><ul class="depth-link-list">
+<li class="depth-ico"><a href="#">정보공개제도 소개</a></li>
+<li class=""><a href="#">비공개 세부기준</a></li>
+<li class=""><a href="#">정보목록</a></li>
+<li class="depth-ico"><a href="#">정보공개청구</a></li>
+<li class=""><a href="#">업무추진비</a></li>
+<li class=""><a href="#">협동조합경영공시</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-0-1" hidden>
+</div>
+<div class="depth-panel" id="menu-0-2" hidden>
+<h2>재정정보</h2><ul class="depth-link-list">
+<li class=""><a href="#">계약현황</a></li>
+<li class=""><a href="#">세입·세출 운용상황</a></li>
+<li class=""><a href="#">보조사업현황</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-0-3" hidden>
+<h2>공공데이터개방</h2><ul class="depth-link-list">
+<li class=""><a href="#">공공데이터</a></li>
+<li class="depth-ico"><a href="#">의견수렴</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-0-4" hidden>
+<h2>감사·청렴자료</h2><ul class="depth-link-list">
+<li class=""><a href="#">감사결과</a></li>
+<li class=""><a href="#">반부패 청렴자료</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-0-5" hidden>
+<h2>정책실명제</h2><ul class="depth-link-list">
+<li class=""><a href="#">정책실명제 안내</a></li>
+<li class=""><a href="#">중점관리 대상사업</a></li>
+<li class=""><a href="#">국민신청실명제</a></li>
+</ul>
+</div>
+</div>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-1">국민참여</button><div class="depth-wrap" id="menu-1" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="">
+<a href="#" class="bgnone">정상화 과제 제안 창구</a>
+</li>
+<li class="">
+<a href="#" class="bgnone">모두의 문화예산 국민의견 수렴</a>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-2">청년소리의 정원</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-3">전자민원</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-4">신고센터</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-5">적극행정</button>
+</li>
+<li class="">
+<a href="#" class="bgnone">특별성과포상 추천</a>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-7">규제개혁</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-8">국민신문고</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-1-9">소통공간</button>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel" id="menu-1-0" hidden>
+</div>
+<div class="depth-panel" id="menu-1-1" hidden>
+</div>
+<div class="depth-panel" id="menu-1-2" hidden>
+<h2>청년소리의 정원</h2><ul class="depth-link-list">
+<li class=""><a href="#">청년소리의 정원 소개</a></li>
+<li class=""><a href="#">청년에게 묻습니다</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-1-3" hidden>
+<h2>전자민원</h2><ul class="depth-link-list">
+<li class=""><a href="#">민원안내</a></li>
+<li class=""><a href="#">민원신청</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-1-4" hidden>
+<h2>신고센터</h2><ul class="depth-link-list">
+<li class=""><a href="#">갑질피해신고</a></li>
+<li class="depth-ico"><a href="#">스포츠윤리센터</a></li>
+<li class=""><a href="#">부패·공익 신고</a></li>
+<li class=""><a href="#">공직자종교차별신고</a></li>
+<li class=""><a href="#">예술인권리침해 신고</a></li>
+<li class=""><a href="#">성희롱·성폭력 신고·상담</a></li>
+<li class="depth-ico"><a href="#">안전신고</a></li>
+<li class=""><a href="#">보조금 부조리 신고</a></li>
+<li class="depth-ico"><a href="#">암표신고</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-1-5" hidden>
+<h2>적극행정</h2><ul class="depth-link-list">
+<li class=""><a href="#">우수사례</a></li>
+<li class=""><a href="#">국민참여</a></li>
+<li class=""><a href="#">제도소개</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-1-6" hidden>
+</div>
+<div class="depth-panel" id="menu-1-7" hidden>
+<h2>규제개혁</h2><ul class="depth-link-list">
+<li class=""><a href="#">규제개혁과제</a></li>
+<li class=""><a href="#">규제개혁 건의</a></li>
+<li class=""><a href="#">규제입증요청</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-1-8" hidden>
+<h2>국민신문고</h2><ul class="depth-link-list">
+<li class=""><a href="#">묻고답하기</a></li>
+<li class=""><a href="#">국민제안</a></li>
+<li class=""><a href="#">예산낭비신고</a></li>
+<li class=""><a href="#">정책참여</a></li>
+<li class="depth-ico"><a href="#">110수어/채팅상담</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-1-9" hidden>
+<h2>소통공간</h2><ul class="depth-link-list">
+<li class=""><a href="#">행정서비스헌장</a></li>
+<li class=""><a href="#">누리집 개선의견</a></li>
+</ul>
+</div>
+</div>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-2">알림·소식</button><div class="depth-wrap" id="menu-2" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="depth-active">
+<button type="button" aria-expanded="true" aria-controls="menu-2-0">알림</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-2-1">보도·뉴스</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-2-2">포상 후보자 접수</button>
+</li>
+<li class="">
+<a href="#" class="bgnone">소식지</a>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel depth-active" id="menu-2-0">
+<h2>알림</h2><ul class="depth-link-list">
+<li class=""><a href="#">공지</a></li>
+<li class=""><a href="#">인사</a></li>
+<li class=""><a href="#">채용정보</a></li>
+<li class=""><a href="#">입찰정보</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-2-1" hidden>
+<h2>보도·뉴스</h2><ul class="depth-link-list">
+<li class=""><a href="#">보도자료</a></li>
+<li class=""><a href="#">언론보도설명·정정</a></li>
+<li class=""><a href="#">사진뉴스</a></li>
+<li class=""><a href="#">동영상뉴스</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-2-2" hidden>
+<h2>포상 후보자 접수</h2><ul class="depth-link-list">
+<li class=""><a href="#">문화예술발전 유공 포상</a></li>
+<li class=""><a href="#">문화예술회관발전상</a></li>
+<li class=""><a href="#">대한민국장애인문화예술대상</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-2-3" hidden>
+</div>
+</div>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-3">문화광장</button><div class="depth-wrap" id="menu-3" hidden><div class="depth-inner depth-flat">
+<ul class="flat-links"><li><a href="#">지역축제</a></li><li><a href="#">문화예술공연</a></li><li><a href="#">추천도서</a></li><li><a href="#">체육행사</a></li><li><a href="#">문화지원사업</a></li></ul>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-4">국제교류</button><div class="depth-wrap" id="menu-4" hidden><div class="depth-inner depth-flat">
+<ul class="flat-links"><li><a href="#">문화원 안내</a></li><li><a href="#">문화원 활동</a></li><li><a href="#">해외문화동향</a></li></ul>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-5">자료공간</button><div class="depth-wrap" id="menu-5" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="">
+<a href="#" class="bgnone">예산자료</a>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-5-1">법령자료</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-5-2">현황자료</button>
+</li>
+<li class="">
+<a href="#" class="bgnone">통계자료</a>
+</li>
+<li class="">
+<a href="#" class="bgnone">연구자료</a>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel" id="menu-5-0" hidden>
+</div>
+<div class="depth-panel" id="menu-5-1" hidden>
+<h2>법령자료</h2><ul class="depth-link-list">
+<li class=""><a href="#">현행법령</a></li>
+<li class=""><a href="#">훈령·예규·고시</a></li>
+<li class=""><a href="#">입법·행정예고</a></li>
+<li class=""><a href="#">표준계약서</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-5-2" hidden>
+<h2>현황자료</h2><ul class="depth-link-list">
+<li class=""><a href="#">비영리법인현황</a></li>
+<li class="depth-ico"><a href="#">국가도서관통계현황</a></li>
+<li class="depth-ico"><a href="#">다문화프로그램 현황</a></li>
+<li class="depth-ico"><a href="#">방송영상독립제작사 신고현황</a></li>
+<li class="depth-ico"><a href="#">작은도서관 현황</a></li>
+<li class="depth-ico"><a href="#">정기간행물 등록관리 현황</a></li>
+<li class="depth-ico"><a href="#">출판사·인쇄사 등록현황</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-5-3" hidden>
+</div>
+<div class="depth-panel" id="menu-5-4" hidden>
+</div>
+</div>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-6">주요정책</button><div class="depth-wrap" id="menu-6" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="">
+<a href="#" class="bgnone">업무계획</a>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-6-1">국정성과</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-6-2">분야별 정책</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-6-3">정책소통</button>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel" id="menu-6-0" hidden>
+</div>
+<div class="depth-panel" id="menu-6-1" hidden>
+<h2>국정성과</h2><ul class="depth-link-list">
+<li class=""><a href="#">정부출범 1주년 성과</a></li>
+<li class=""><a href="#">대표 국정성과</a></li>
+<li class=""><a href="#">국정성과 목록</a></li>
+<li class="depth-ico"><a href="#">범정부 국정성과 보기</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-6-2" hidden>
+<h2>분야별 정책</h2><ul class="depth-link-list">
+<li class=""><a href="#">전체</a></li>
+<li class=""><a href="#">기획조정·지원</a></li>
+<li class=""><a href="#">문화예술</a></li>
+<li class=""><a href="#">종무</a></li>
+<li class=""><a href="#">국제문화홍보</a></li>
+<li class=""><a href="#">콘텐츠·저작권·미디어</a></li>
+<li class=""><a href="#">관광</a></li>
+<li class=""><a href="#">국민소통</a></li>
+<li class=""><a href="#">체육</a></li>
+<li class=""><a href="#">기타</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-6-3" hidden>
+<h2>정책소통</h2><ul class="depth-link-list">
+<li class=""><a href="#">대학생기자단</a></li>
+<li class=""><a href="#">홍보물</a></li>
+</ul>
+</div>
+</div>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-7">문체부소개</button><div class="depth-wrap" id="menu-7" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="depth-active">
+<button type="button" aria-expanded="true" aria-controls="menu-7-0">기관소개</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-7-1">열린장관실</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-7-2">조직안내</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-7-3">청사안내</button>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel depth-active" id="menu-7-0">
+<h2>기관소개</h2><ul class="depth-link-list">
+<li class=""><a href="#">연혁</a></li>
+<li class=""><a href="#">상징(MI)</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-7-1" hidden>
+<h2>열린장관실</h2><ul class="depth-link-list">
+<li class="depth-ico"><a href="#">장관과의 대화방</a></li>
+<li class="depth-ico"><a href="#">활동방</a></li>
+<li class="depth-ico"><a href="#">장·차관소개</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-7-2" hidden>
+<h2>조직안내</h2><ul class="depth-link-list">
+<li class=""><a href="#">조직도</a></li>
+<li class=""><a href="#">직원검색</a></li>
+<li class=""><a href="#">소속기관 안내</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-7-3" hidden>
+<h2>청사안내</h2><ul class="depth-link-list">
+<li class=""><a href="#">찾아오시는 길</a></li>
+<li class=""><a href="#">층별안내</a></li>
+</ul>
+</div>
+</div>
+</div></div></li>
+<li><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="menu-8">이용안내</button><div class="depth-wrap" id="menu-8" hidden><div class="depth-inner">
+<div class="depth-left"><ul>
+<li class="">
+<a href="#" class="bgnone">전체 메뉴</a>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-8-1">운영정책</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-8-2">누리집 안내</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-8-3">공공누리</button>
+</li>
+<li class="">
+<button type="button" aria-expanded="false" aria-controls="menu-8-4">서비스 안내</button>
+</li>
+<li class="">
+<a href="#" class="bgnone">배너모음</a>
+</li>
+<li class="">
+<a href="#" class="bgnone">회원탈퇴</a>
+</li>
+</ul></div><div class="depth-right">
+<div class="depth-panel" id="menu-8-0" hidden>
+</div>
+<div class="depth-panel" id="menu-8-1" hidden>
+<h2>운영정책</h2><ul class="depth-link-list">
+<li class=""><a href="#">개인정보 처리방침</a></li>
+<li class=""><a href="#">저작권정책</a></li>
+<li class=""><a href="#">행정서비스헌장</a></li>
+<li class=""><a href="#">웹 접근성 품질마크</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-8-2" hidden>
+<h2>누리집 안내</h2><ul class="depth-link-list">
+<li class=""><a href="#">누리집 이용안내</a></li>
+<li class=""><a href="#">읽기 전용 프로그램 안내</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-8-3" hidden>
+<h2>공공누리</h2><ul class="depth-link-list">
+<li class="depth-ico"><a href="#">공공누리 제도 안내</a></li>
+<li class="depth-ico"><a href="#">공공누리 유형 안내</a></li>
+<li class="depth-ico"><a href="#">공공누리 이용 안내</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-8-4" hidden>
+<h2>서비스 안내</h2><ul class="depth-link-list">
+<li class=""><a href="#">정보구독서비스</a></li>
+<li class=""><a href="#">전자우편서비스</a></li>
+</ul>
+</div>
+<div class="depth-panel" id="menu-8-5" hidden>
+</div>
+<div class="depth-panel" id="menu-8-6" hidden>
+</div>
+</div>
+</div></div></li>
+</ul>
+</div>
+</nav>
+    </header>
+    <!---------------------------------- header 끝 ------------------------------------>
+
+    <!---------------------------------- 메인 시작 ------------------------------------>
+
+    <!---------------------------------- 섹션 1 시작 ------------------------------------>
+    <main>
+      <section class="sec-1">
+        <div class="sec-1-grid">
+          <div class="sec-1-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="inner">
+                  <div class="text-box">
+                    <h2>청와대 사랑채에서 팔색찬란한 ‘케이-기원’ 만난다</h2>
+                    <p>사랑채 1층에서 특별전 개최, 한국 역사와 문화예술, 지역문화가 ‘케이-콘텐츠’로 확장되는 과정 공개</p>
+                    <a href="#" class="button">자세히 보러가기</a>
+                  </div>
+                  <div class="img-box">
+                    <a href="#"><img src="img/sec-1/slide_1.gif" alt="K로 가득한 지역 팔색찬란" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <div class="text-box">
+                    <h2>문화체육관광부 공무원 사칭 납품요구 주의</h2>
+                    <p>
+                      공무원을 사칭하여 납품 요구를 하는 사례가 있으니 주의하시기
+                      <br />
+                      바랍니다.
+                    </p>
+                    <a href="#" class="button">자세히 보러가기</a>
+                  </div>
+                  <div class="img-box">
+                    <a href="#"><img src="img/sec-1/slide_2.jpeg" alt="문화체육관광부 공무원 사칭 납품요구 주의" /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <div class="text-box">
+                    <h2>정상화 과제 제안 창구</h2>
+                    <p>문화예술·콘텐츠·관광·체육 분야에서 바로잡아야 할 점은 무엇인가요? 국민 여러분의 소중한 의견을 들려주세요.</p>
+                    <a href="#" class="button">자세히 보러가기</a>
+                  </div>
+                  <div class="img-box">
+                    <a href="#">
+                      <img
+                        src="img/sec-1/slide_3.jpeg"
+                        alt="문화체육관광부 정상화 과제 제안 창구 문화예술·콘텐츠·관광·체육 분야에 대한 여러분의 의견을 들려주세요"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-box">
+            <div class="sec-1-pagination-box">
+              <div class="sec-1-pagination"></div>
+            </div>
+            <button type="button" class="sec-1-autoplay-control">
+              <span class="sr-only">정지</span>
+            </button>
+            <button type="button" class="sec-1-prev">
+              <span class="sr-only">이전</span>
+            </button>
+            <button type="button" class="sec-1-next">
+              <span class="sr-only">다음</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!---------------------------------- 섹션 1 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 2 시작 ------------------------------------>
+      <section class="sec-2">
+        <div class="sec-2-grid">
+          <h2 class="title">알림·소식</h2>
+          <div class="inner-box">
+            <div class="left-box">
+              <ul class="tab-head">
+                <li class="active">
+                  <a href="#">공지</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          제9회 지식재산의 날 기념 정부포상 및 부처·법원포상 공고
+                        </a>
+                        <span>2026.06.16.</span>
+                      </li>
+                      <li>
+                        <a href="#">우리동네 프로젝트 BI 디자인 공모전 개최</a>
+                        <span>2026.06.15.</span>
+                      </li>
+                      <li>
+                        <a href="#">2026년 어르신 스포츠강좌 프로그램 지원 사업 4차공모 알림</a>
+                        <span>2026.06.15.</span>
+                      </li>
+                      <li>
+                        <a href="#">제21회 대한민국장애인문화예술대상 후보자 추천 공고</a>
+                        <span>2026.06.12.</span>
+                      </li>
+                      <li>
+                        <a href="#">문화데이터 개방 수요 및 만족도 조사</a>
+                        <span>2026.06.10.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">채용</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          국립청주박물관 공무직 근로자(학예보조) 채용 공고
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          국립청주박물관 공무직근로자（학예 보조）채용 공고
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          국립민속박물관 유물과학과 공무직(학예원) 근로자 채용 최종합격자 공고
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          [대한사이클연맹] 국제업무 계약직 직원 채용 공고
+                        </a>
+                        <span>2026.06.16.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          [대한사이클연맹] 계약직 직원 채용 공고
+                        </a>
+                        <span>2026.06.16.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">입찰</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          2026년 국립나주박물관 특별전 영상 콘텐츠 제작 설치
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          2026 공연예술행사 통합 티켓운영 대행용역
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          2026년 예술인 권리보장시스템 고도화 및 기능개선 용역(재공고)
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          국립중앙박물관 고객정보통합관리(CRM) 시스템 구축
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          지정스포츠클럽 신규,갱신 공모 위탁운영 용역
+                        </a>
+                        <span>2026.06.16.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="button-box">
+                <a href="#" class="button">더보기</a>
+              </div>
+            </div>
+            <div class="right-box">
+              <ul class="tab-head">
+                <li class="active">
+                  <a href="#">보도자료</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          ‘스트레이 키즈’ 필릭스, 한복의 다채로운 매력 세계에 알린다
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <span class="badge">새글</span>
+                          ‘그냥 좋아서(書)’ 떠나는 독서원정대, 전국 누빈다
+                        </a>
+                        <span>2026.06.17.</span>
+                      </li>
+                      <li>
+                        <a href="#">17개 시도와 손잡고 ‘어디서든 체감하는 문화예술 정책’ 구현</a>
+                        <span>2026.06.16.</span>
+                      </li>
+                      <li>
+                        <a href="#">문체부, 대중음악산업 허리 강화 위해 중소기획사 10개 그룹 해외 진출 지원</a>
+                        <span>2026.06.16.</span>
+                      </li>
+                      <li>
+                        <a href="#">천만 원의 주인공이 될 최고의 웹툰을 뽑아주세요</a>
+                        <span>2026.06.15.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">언론보도설명·정정</a>
+                  <div class="tab-body">
+                    <ul>
+                      <li>
+                        <a href="#">‘제이티비시(JTBC) 수어 말뭉치 구축 사업 의혹’ 관련 사실 확인 및 후속 조치 상황을 설명드립니다</a>
+                        <span>2026.06.02.</span>
+                      </li>
+                      <li>
+                        <a href="#">미등록 대중문화예술기획업 기소유예 처분 관련 보도에 대해 알려드립니다</a>
+                        <span>2026.03.25.</span>
+                      </li>
+                      <li>
+                        <a href="#">반값 여행 사업 예산과 관련하여 설명드립니다</a>
+                        <span>2026.03.24.</span>
+                      </li>
+                      <li>
+                        <a href="#">방송채널사용사업자(PP)의 음악 저작권 사용료 정산 기준 관련 보도 내용에 대해 설명해 드립니다</a>
+                        <span>2026.03.13.</span>
+                      </li>
+                      <li>
+                        <a href="#">‘제이티비시(JTBC) 올림픽 단독 중계’ 관련 보도 내용에 대해 설명드립니다</a>
+                        <span>2026.03.04.</span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">사진뉴스</a>
+                  <div class="tab-body img-tab img-tab-1">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async"
+                              class="tab-img-1"
+                              src="img/sec-2/sec-2-tab-img.jpg"
+                              alt="‘케이애니메이션 경쟁력 강화’ 위한 정책 방안 논의(2026.06.12.) 관련 이미지"
+                            />
+                          </div>
+                          <div class="text-box">
+                            <p>‘케이애니메이션 경쟁력 강화’ 위한 정책 방안 논의(2026.06.12.)</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">동영상뉴스</a>
+                  <div class="tab-body img-tab img-tab-2">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async"
+                              class="tab-img-2"
+                              src="img/sec-2/sec-2-tab-img-2.png"
+                              alt='"K-컬처 개념 재정의···시장 목표 400조 원으로 상향" 관련 이미지'
+                            />
+                          </div>
+                          <div class="text-box">
+                            <p>"K-컬처 개념 재정의···시장 목표 400조 원으로 상향"</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="button-box">
+                <a href="#" class="button">더보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 2 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 3 시작 ------------------------------------>
+
+      <section class="sec-3">
+        <div class="sec-3-grid">
+          <div class="left-box">
+            <h2 class="title">국제교류</h2>
+            <div class="left-inner">
+              <div class="text-box">
+                <p class="text-1">한국문화원 소개</p>
+                <p class="text-2">
+                  전 세계 35개 문화원을 통해
+                  <br />
+                  한국문화를 홍보하고 있습니다!
+                </p>
+                <p class="text-3">
+                  한국의 아름다운 문화를 세계에 알리고 국가 간 문화교류를 확대하기 위해
+                  <br />
+                  한국문화원을 운영하고 있습니다.
+                </p>
+              </div>
+              <div class="link-box">
+                <a href="#" class="link link-1">문화원 안내</a>
+                <a href="#" class="link link-2">문화원 활동</a>
+                <a href="#" class="link link-3">해외문화동향</a>
+              </div>
+            </div>
+          </div>
+          <div class="right-box">
+            <div class="top-box">
+              <h2 class="title">알림판</h2>
+              <div class="button-box">
+                <div class="sec-3-pagination-box">
+                  <div class="sec-3-pagination"></div>
+                </div>
+                <button type="button" class="sec-3-autoplay-control">
+                  <span class="sr-only">정지</span>
+                </button>
+                <button type="button" class="sec-3-prev">
+                  <span class="sr-only">이전</span>
+                </button>
+                <button type="button" class="sec-3-next">
+                  <span class="sr-only">다음</span>
+                </button>
+              </div>
+            </div>
+            <div class="bottom-box">
+              <div class="sec-3-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img loading="lazy" decoding="async"
+                        class="slide-img"
+                        src="img/sec-3/slide_1.png"
+                        alt="국민주권정부 38대 대표 성과국민이 만든 대전환의 길 회복과 도약, 모두의 1년 홍보자료집 보기"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img loading="lazy" decoding="async"
+                        class="slide-img"
+                        src="img/sec-3/slide_2.png"
+                        alt="2026년 문화데이터 대국민 수요 조사 ㅇ (참여기간) 2026. 06. 09.(화) ~ 06. 21.(일) ㅇ (대상) 공공데이터에 관심있는 국민 누구나 ㅇ (방법) QR코드를 스캔하여 설문 접속 참여해주신 분 중 추첨을 통해 설문응답자 100명에게 커피 쿠폰을 보내드립니다 문화체육관광부 한국문화정보원"
+                      />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img loading="lazy" decoding="async" class="slide-img" src="img/sec-3/slide_3.gif" alt="전화상담 110으로 가능합니다" />
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img loading="lazy" decoding="async"
+                        class="slide-img"
+                        src="img/sec-3/slide_4.gif"
+                        alt="국민 제안창구 지금 참여하기! 이 가격 맞아?! 일상 속 가격이 납득하기 어려운 제품/서비스를 알려주세요!"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 3 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 4 시작 ------------------------------------>
+
+      <section class="sec-4">
+        <div class="sec-4-grid">
+          <h2 class="title">주요정책</h2>
+          <div class="inner">
+            <div class="left-box">
+              <p class="left-text-1">
+                케이-컬처,
+                <br />
+                온 국민이 누리고
+                <br />
+                세계를 품는다
+              </p>
+              <p class="left-text-2">
+                문화체육관광부는 문화·예술·
+                <br />
+                영상·광고·출판·간행물
+                <br />
+                ·체육·관광, 국정에 대한 홍보 및 정부발표에 관한 사무를
+                <br />
+                총괄합니다.
+              </p>
+              <a href="#" class="left-link">자세히 보기</a>
+            </div>
+            <div class="right-box">
+              <div class="swiper-box">
+                <div class="sec-4-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="con-box">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async"
+                              class="slide-img"
+                              src="img/sec-4/slide_1.png"
+                              alt="중동 위기 선제 대응을 위한 2026년도 제1차 추가경정예산 4,614억 원 확정"
+                            />
+                          </div>
+                          <div class="text-box">
+                            <p>문체부 추경 4,614억 원 확정</p>
+                            <p>중동 위기 선제 대응을 위한 2026년도 제1차 추가경정예산 4,614억 원 확정</p>
+                            <span class="link">자세히 보기</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="con-box">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async" class="slide-img" src="img/sec-4/slide_2.png" alt="2026년 스포츠참여 포인트제(튼튼머니)" />
+                          </div>
+                          <div class="text-box">
+                            <p>2026년 스포츠참여 포인트제(튼튼머니)</p>
+                            <p>2월 23일부터 2026년 튼튼머니 시작 4세 이상 국민이라면 누구나</p>
+                            <span class="link">자세히 보기</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="con-box">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async" class="slide-img" src="img/sec-4/slide_3.png" alt="2026년 달라지는 관광정책" />
+                          </div>
+                          <div class="text-box">
+                            <p>2026년 달라지는 관광정책</p>
+                            <p>농어촌 인구 감소 지역으로 여행을 떠나면 여행 비용의 50% 환급.</p>
+                            <span class="link">자세히 보기</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="con-box">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async"
+                              class="slide-img"
+                              src="img/sec-4/slide_4.png"
+                              alt="문화누리카드(통합문화이용권): 취약계층 총 270만 명 대상, 전년 대비 1만 원 인상한 15만 원 지원"
+                            />
+                          </div>
+                          <div class="text-box">
+                            <p>문화누리카드(통합문화이용권)</p>
+                            <p>취약계층 총 270만 명 대상, 전년 대비 1만 원 인상한 15만 원 지원</p>
+                            <span class="link">자세히 보기</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="con-box">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async"
+                              class="slide-img"
+                              src="img/sec-4/slide_5.png"
+                              alt="2025 국민생활체육조사:25년 국민 생활체육 참여율 62.9%, 전년 대비 2.2%포인트 상승"
+                            />
+                          </div>
+                          <div class="text-box">
+                            <p>2025 국민생활체육조사</p>
+                            <p>25년 국민 생활체육 참여율 62.9%, 전년 대비 2.2%포인트 상승</p>
+                            <span class="link">자세히 보기</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="#">
+                        <div class="con-box">
+                          <div class="img-box">
+                            <img loading="lazy" decoding="async" class="slide-img" src="img/sec-4/slide_6.png" alt="2024년 기준 스포츠산업조사" />
+                          </div>
+                          <div class="text-box">
+                            <p>2024년 기준 스포츠산업조사</p>
+                            <p>전년 대비 매출액 4.5%, 종사자 수 6.7%, 사업체 수 4.4% 각각 증가</p>
+                            <span class="link">자세히 보기</span>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="sec-4-prev">
+                  <span class="sr-only">이전</span>
+                </button>
+                <button type="button" class="sec-4-next">
+                  <span class="sr-only">다음</span>
+                </button>
+              </div>
+              <div class="sec-4-pagination-container">
+                <div class="sec-4-pagination-box">
+                  <div class="sec-4-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 4 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 5 시작 ------------------------------------>
+
+      <section class="sec-5">
+        <div class="sec-5-grid">
+          <h2 class="title">자주찾는 메뉴</h2>
+          <div class="inner">
+            <div class="swiper-box">
+              <div class="sec-5-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-1"></span>
+                      <p>국정성과</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-2"></span>
+                      <p>업무계획</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-3"></span>
+                      <p>분야별 정책</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-4"></span>
+                      <p>전자민원</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-5"></span>
+                      <p>열린장관실</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-6"></span>
+                      <p>적극행정</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-7"></span>
+                      <p>직원검색</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-8"></span>
+                      <p>문화예술공연</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <span class="i-9"></span>
+                      <p>조직도</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="sec-5-prev">
+                <span class="sr-only">이전</span>
+              </button>
+              <button type="button" class="sec-5-next">
+                <span class="sr-only">다음</span>
+              </button>
+            </div>
+            <div class="sec-5-pagination-container">
+              <div class="sec-5-pagination-box">
+                <div class="sec-5-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 5 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 6 시작 ------------------------------------>
+
+      <section class="sec-6">
+        <div class="sec-6-grid">
+          <h2 class="title">누리소통망</h2>
+          <div class="inner">
+            <div class="swiper-box">
+              <div class="sec-6-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" title="새 창 열림">
+                      <div class="slide-inner">
+                        <div class="sns-img-fa sns-img">
+                          <span class="sr-only">페이스북</span>
+                        </div>
+                        <div class="main-img-box">
+                          <img loading="lazy" decoding="async"
+                            class="slide-img"
+                            src="img/sec-6/sec_6_img_1.jpg"
+                            alt="2026 FIFA 북중미 월드컵 태극전사에게 보내는 11글자 응원이벤트"
+                          />
+                        </div>
+                        <div class="text-box">
+                          <p>이벤트 💝11글자로 전하는 승리의 주문! ✨ 2026 FIFA 북중미 월드컵 개막이 다가오고 있습니다! 🎉</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="새 창 열림">
+                      <div class="slide-inner">
+                        <div class="sns-img-in sns-img">
+                          <span class="sr-only">인스타그램</span>
+                        </div>
+                        <div class="main-img-box">
+                          <img loading="lazy" decoding="async" class="slide-img" src="img/sec-6/sec_6_img_2.jpg" alt="책과사람사이 📚✨책과 사람을 다정한 신뢰로 잇습니다." />
+                        </div>
+                        <div class="text-box">
+                          <p>책과사람사이 📚✨책과 사람을 다정한 신뢰로 잇습니다.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide swiper-slide-text">
+                    <a href="#" title="새 창 열림">
+                      <div class="slide-inner">
+                        <div class="sns-img-bl sns-img">
+                          <span class="sr-only">블로그</span>
+                        </div>
+                        <div class="text-box">
+                          <p class="slide-text-1">국내 여행 지갑은 가볍게 혜택은 두둑하게! | <디지털관광주민증> 운영 지역 52개로 확대</p>
+                          <p class="slide-text-2">
+                            인구감소지역의 관광 활성화를 위 해 도입한 ‘디지털관광주민증’ 서비 스 지역을 6월 8일부터 기존 44개 지역에서 52개 지역으로
+                            확대합니 다. 이는 행정안전부가 2021년 10월에 지정·고시한 89개 인구감소지역의 절반을 웃도는 수준(58.4%)입니다. 새로운 8개
+                            지역 합류 케이블카·테마파크 등 최대 50% 할인 ‘디지털관광주민증’에 새롭게 참여하는 8개 기초지방정부는 충북 보은군 , 전북
+                            순창군, 전남 고흥군·담양군·완도군 , 경북 울진군, 경남 산청군·함양군인데요. 지난 4월 공모를 통해 선정했으며, 준비를 거쳐
+                            6월 8일부터 서비스를 개시합니다. 이로써 ‘디지털관광주민증’으로 혜택을 누릴 수 있는 장소도 기존 44개 지역 1, 100여
+                            곳에.......
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" title="새 창 열림">
+                      <div class="slide-inner">
+                        <div class="sns-img-you sns-img">
+                          <span class="sr-only">유튜브</span>
+                        </div>
+                        <div class="main-img-box">
+                          <img loading="lazy" decoding="async" class="slide-img" src="img/sec-6/sec_6_img_3.jpg" alt="역대 최고 성과 달성" />
+                        </div>
+                        <div class="text-box">
+                          <p>문체부 성과 '캐치' '캐치~'</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-box">
+              <div class="sec-6-pagination-box">
+                <div class="sec-6-pagination">
+                  <span class="swiper-pagination-current">1</span>
+                  <span class="swiper-pagination-total">1</span>
+                </div>
+              </div>
+              <button type="button" class="sec-6-prev">
+                <span class="sr-only">이전</span>
+              </button>
+              <button type="button" class="sec-6-next">
+                <span class="sr-only">다음</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 6 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 7 시작 ------------------------------------>
+
+      <section class="sec-7">
+        <div class="sec-7-grid">
+          <div class="inner">
+            <div class="title-box">
+              <a href="#" class="title-img">
+                <span class="sr-only">대한민국 정책브리핑</span>
+              </a>
+              <a href="#" class="plus-text">더보기</a>
+            </div>
+            <div class="body-box">
+              <ul>
+                <li>
+                  <a href="#">
+                    <p>수용자 손 잡아주는 '엄마' 교도관 "한 사람을 보듬는 일이 우리 사회 지키는 일입니다"</p>
+                    <p>
+                      경기도 의정부교도소 앞 철문에서 장선숙 교도관이 미소 짓고 있다. 의정부교도소는 그가 교도관 생활의 절반 이상을 보낸 곳이다. 사진
+                      C영상미디어 경기도 의정부교도소에는 조금 특별한 엄마가 한 명 있다. 열두 척 담장 안에 따뜻한 기운을 불어넣는 장선숙 교도관이다.
+                      별명은 '호랑이 선생님'. 혼낼 때는 누구보다 무섭지만 수용자들은 그를 엄마라고 부른다. 장 교도관보다 나이가 많은 수용자도 예외는
+                      아니다. 매섭게 지적을 해도 그 안에 사랑이 깔려 있다는 걸 수용자들은 본능적으로 안다. 몇 해 전 겨울 그는 바깥 음식이라면 무엇이든
+                      먹고 싶어 하는 수용자들을 위해 검은 비닐봉지가 미어터지도록 몰래 붕어빵을 사들고 왔다. 봉지 안에 습기가 차면서 붕어빵은 들러붙고
+                      엉망이 됐지만 수용자들은 남김없이 먹었다. 나중에는 따끈한 붕어빵을 먹이고 싶어서 아예 봉사자를 교도소 안으로 불러들였다. 갓 구운
+                      붕어빵 냄새가 교도소 안을 채웠다. 사람들은 묻는다. "죄를 지어 교도소에 온 이들에게 왜 그렇게까지 잘해주느냐"고. 그는 "사람은
+                      편안해야 자신을 돌아볼 수 있다. 그래야 진정한 의미의 교화도 가능해진다. 결국 그것이 우리 사회를 더 안전하게 만드는 길이다"라고
+                      말한다. 말은 쉽지만 실천은 어려운 일이다. 그는 36년 동안 그 일을 해왔다. 그의 도움으로 보이스피싱 범죄자는 분식집 사장이 됐고 또
+                      다른 수용자는 사회복지사를 꿈꾸게 됐다. 한 사람을 살리는 일이 결국 세상을 지키는 일이라고 그는 믿는다. 장 교도관은 수용자들을 더
+                      잘 돕기 위해 법학을 공부했고 사회 복귀 지원
+                    </p>
+                    <p>
+                      <span>2026.06.09</span>
+                      <span>대한민국 정책주간지 K-공감</span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>산후조리원 폐업·휴업 30일 전 안내…예약금 미반환 피해 막는다</p>
+                    <p>
+                      산후조리원의 갑작스러운 폐업으로 예약금을 돌려받지 못하는 피해를 예방하기 위해 폐업·휴업 사실을 이용자에게 30일 전에 알리도록
+                      하는 제도 개선에 나선다. 산후조리원 이용 예정 임산부에 대한 사전 안내를 의무화하고, 이용 중인 산모와 영유아에 대한 보호조치도
+                      강화해 소비자 권익 보호와 서비스 이용 안정성을 높일 계획이다. 보건복지부는 이달 9일부터 7월 20일까지 이 같은 내용을 담은
+                      '모자보건법 시행규칙' 일부개정령안을 입법예고한다고 밝혔다. 28일 오후 서울 시내 한 산후조리원 신생아실에서 간호사 등
+                      관계자들이...
+                    </p>
+                    <p>
+                      <span>2026.06.09</span>
+                      <span>보건복지부</span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>산업장관, 카자흐⋅중동⋅체코 방문…원유·LNG 등 공급망 협력 강화</p>
+                    <p>
+                      김정관 산업통상부 장관이 7일부터 18일까지 카자흐스탄, 사우디⋅카타르⋅UAE 중동 3개국, 체코를 방문해 주요 인사들과 에너지·자원 수급
+                      상황을 점검하고 경제⋅산업 협력 강화에 나선다. 김정관 산업통상부 장관이 15일 서울 종로구 석탄회관에서 열린 '원유·나프타 수급 대응
+                      점검회의'에서 발언하고 있다. 2026.4.15 (ⓒ뉴스1, 무단 전재-재배포 금지) 김정관 장관은 우선 7일에서 9일까지 카자흐스탄 아스타나를
+                      방문해 '제11차 한-카자흐스탄 무역·경제 및 과학·기술 협력 공동위원회'를 개최하고 에너지·자원, 디지털, 친환경 분야 ...
+                    </p>
+                    <p>
+                      <span>2026.06.09</span>
+                      <span>산업통상부</span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>원화 약세 흐름에 편승한 투기·시장교란 의심 행위 등 점검</p>
+                    <p>
+                      구윤철 부총리 겸 재정경제부 장관은 7일 전국은행연합회관에서 관계기관 합동 '긴급 시장상황점검회의'를 개최해 최근 국내외
+                      금융·외환시장 동향을 점검하고 대응 방향을 논의했다. 이날 회의에는 신현송 한국은행 총재, 이억원 금융위원회 위원장, 이찬진
+                      금융감독원 원장 등이 참석했다. 구윤철 부총리 겸 재정경제부 장관이 7일 서울 중구 은행연합회에서 열린 시장상황점검회의를 주재하고
+                      있다. 2026.6.7 (ⓒ뉴스1, 재정경제부 제공, 무단 전재-재배포 금지) 우선 참석자들은 반도체 및 연관 산업 전반의 이익 전망이 지속
+                      상향되고...
+                    </p>
+                    <p>
+                      <span>2026.06.09</span>
+                      <span>재정경제부</span>
+                    </p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>주민자치회 참여 문턱 낮춘다…거주요건 완화·외국인 참여 허용</p>
+                    <p>
+                      새로 이사 온 주민과 외국인도 주민자치회에 참여할 수 있게 되고, 주민총회가 주민참여예산과 연계돼 지역 의사결정 권한도 강화된다.
+                      행안부는 지난 4월 '지방자치법' 개정으로 주민자치회 시범실시가 종료되고 전국적인 운영 근거가 마련됨에 따라 '주민자치회
+                      설치·운영에 관한 참고조례 전부개정안'을 지방자치단체에 배포한다고 8일 밝혔다. 이번 개정안은 주민자치회의 개방성과 의사결정 기능,
+                      지역사회 연계 기능을 강화하는 데 초점을 맞췄다. 행안부는 2013년 주민자치회 시범실시와 함께 참고조례를 마련한 이후 지속적으로 ...
+                    </p>
+                    <p>
+                      <span>2026.06.09</span>
+                      <span>재정경제부</span>
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 7 끝 ------------------------------------>
+
+      <!---------------------------------- 섹션 8 시작 ------------------------------------>
+
+      <section class="sec-8">
+        <div class="sec-8-grid">
+          <div class="swiper-box">
+            <div class="sec-8-swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_1.gif" alt="다채로운 문화정보를 제공하는 문화포털" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_2.gif" alt="문화셈터 문화통계포털" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_3.jpg" alt="규제신문고" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_4.gif" alt="국민권익위원회가 운영하는 청렴포털 부패공익신고" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_5.png" alt="혁신24" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_6.gif" alt="정부정책, 사실은 이렇습니다" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" title="새 창 열림">
+                    <img loading="lazy" decoding="async" src="img/sec-8/sec_8_img_7.gif" alt="MONTHLY MAGAZINE KOREA" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="sec-8-pagination-box">
+              <div class="sec-8-pagination"></div>
+            </div>
+            <button type="button" class="sec-8-prev">
+              <span class="sr-only">이전</span>
+            </button>
+            <button type="button" class="sec-8-next">
+              <span class="sr-only">다음</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!---------------------------------- 섹션 8 끝 ------------------------------------>
+    </main>
+
+    <!---------------------------------- 메인 끝 ------------------------------------>
+
+    <!---------------------------------- 푸터 시작 ------------------------------------>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top-grid">
+          <ul class="site-list">
+            <li class="site-list-item-1" title="소속기관 누리집 레이어">
+              <a href="#"><span>소속기관 누리집</span></a>
+            </li>
+            <li class="site-list-item-2" title="관련기관 누리집 레이어">
+              <a href="#"><span>관련기관 누리집</span></a>
+            </li>
+            <li class="site-list-item-3" title="정부기관 누리집 레이어">
+              <a href="#"><span>정부기관 누리집</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-grid">
+          <div class="logo-box">
+            <span class="sr-only">문화체육관광부</span>
+          </div>
+          <div class="cen-box">
+            <div class="left-text-box">
+              <p class="top-text">30119 세종특별자치시 갈매로 388 정부세종청사 15동</p>
+              <div class="info-box">
+                <div class="text-list text-list-1">
+                  <p class="info-text-1">
+                    <span>대표전화</span>
+                    <a href="#">044-203-2000</a>
+                  </p>
+                  <p class="info-text-2">(평일 9시 ~ 18시, 유료)</p>
+                  <p class="info-text-3">팩스 044-203-3447</p>
+                </div>
+                <div class="text-list text-list-2">
+                  <p class="info-text-1">
+                    <span>정부민원안내콜센터</span>
+                    <a href="#">국번없이 110</a>
+                  </p>
+                  <p class="info-text-2">(평일 9시 ~ 18시, 무료)</p>
+                </div>
+                <div class="text-list text-list-3">
+                  <p class="info-text-1">
+                    <span>해외이용</span>
+                    Tel. +82-44-203-2000
+                  </p>
+                  <p class="info-text-2">Fax. +82-44-203-3447</p>
+                </div>
+              </div>
+            </div>
+            <div class="right-text-box">
+              <div class="link-box">
+                <a href="#" class="link-1">이용안내</a>
+                <a href="#" class="link-2">찾아오시는 길</a>
+              </div>
+              <div class="icon-box">
+                <a href="#" class="i-in" title="인스타그램 새 창 열기">
+                  <span class="sr-only">인스타그램</span>
+                </a>
+                <a href="#" class="i-you" title="유튜브 새 창 열기">
+                  <span class="sr-only">유튜브</span>
+                </a>
+                <a href="#" class="i-t" title="트위터 새 창 열기">
+                  <span class="sr-only">트위터</span>
+                </a>
+                <a href="#" class="i-fa" title="페이스북 새 창 열기">
+                  <span class="sr-only">페이스북</span>
+                </a>
+                <a href="#" class="i-bl" title="블로그 새 창 열기">
+                  <span class="sr-only">블로그</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="last-box">
+            <div class="top-box">
+              <a href="#">개인정보처리방침</a>
+              <a href="#">저작권 정책</a>
+              <a href="#">행정서비스헌장</a>
+              <a href="#">누리집 이용안내</a>
+              <a href="#">누리집개선의견</a>
+            </div>
+            <div class="bottom-box">
+              <p>© Ministry of Culture, Sports and Tourism . All rights reserved.</p>
+            </div>
+            <div class="mark-box">
+              <a href="#" class="mark-1" title="공공누리 사이트 새 창 열림">
+                <img loading="lazy" decoding="async" src="img/footer/footer_open.svg" alt="OPEN 공공누리 공공저작물 자유이용허락 사이트 바로가기" />
+              </a>
+              <a href="#" class="mark-2">
+                <img loading="lazy" decoding="async" src="img/footer/wa_mark.png" alt="웹 접근성 품질마크 내용보기" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!---------------------------------- 푸터 끝 ------------------------------------>
+
+    <!---------------------------------- 모달 시작 ------------------------------------>
+
+    <div class="site-modal site-modal-1" id="site-modal-1" role="dialog" aria-modal="true" aria-labelledby="site-title-1" hidden><div class="modal-header"><h2 id="site-title-1">소속기관</h2></div><button type="button" class="modal-close-btn" aria-label="닫기"></button><div class="modal-body">
+<ul >
+<li><a href="#" title="대한민국예술원 새 창 열림">대한민국예술원</a></li><li><a href="#" title="한국예술종합학교 새 창 열림">한국예술종합학교</a></li><li><a href="#" title="국립국악고등학교 새 창 열림">국립국악고등학교</a></li><li><a href="#" title="국립국악중학교 새 창 열림">국립국악중학교</a></li><li><a href="#" title="국립전통예술고등학교 새 창 열림">국립전통예술고등학교</a></li><li><a href="#" title="국립전통예술중학교 새 창 열림">국립전통예술중학교</a></li><li><a href="#" title="국립중앙박물관 새 창 열림">국립중앙박물관</a></li><li><a href="#" title="국립국어원 새 창 열림">국립국어원</a></li><li><a href="#" title="국립중앙도서관 새 창 열림">국립중앙도서관</a></li><li><a href="#" title="국립국악원 새 창 열림">국립국악원</a></li><li><a href="#" title="국립민속박물관 새 창 열림">국립민속박물관</a></li><li><a href="#" title="대한민국역사박물관 새 창 열림">대한민국역사박물관</a></li><li><a href="#" title="국립한글박물관 새 창 열림">국립한글박물관</a></li><li><a href="#" title="국립중앙극장 새 창 열림">국립중앙극장</a></li><li><a href="#" title="국립현대미술관 새 창 열림">국립현대미술관</a></li><li><a href="#" title="한국정책방송원 새 창 열림">한국정책방송원</a></li><li><a href="#" title="국립아시아문화전당 새 창 열림">국립아시아문화전당</a></li><li><a href="#" title="국립장애인도서관 새 창 열림">국립장애인도서관</a></li>
+</ul>
+<ul >
+<li><a href="#" title="국립경주박물관 새 창 열림">국립경주박물관</a></li><li><a href="#" title="국립광주박물관 새 창 열림">국립광주박물관</a></li><li><a href="#" title="국립전주박물관 새 창 열림">국립전주박물관</a></li><li><a href="#" title="국립부여박물관 새 창 열림">국립부여박물관</a></li><li><a href="#" title="국립대구박물관 새 창 열림">국립대구박물관</a></li><li><a href="#" title="국립청주박물관 새 창 열림">국립청주박물관</a></li><li><a href="#" title="국립김해박물관 새 창 열림">국립김해박물관</a></li><li><a href="#" title="국립제주박물관 새 창 열림">국립제주박물관</a></li><li><a href="#" title="국립춘천박물관 새 창 열림">국립춘천박물관</a></li><li><a href="#" title="국립진주박물관 새 창 열림">국립진주박물관</a></li><li><a href="#" title="국립공주박물관 새 창 열림">국립공주박물관</a></li><li><a href="#" title="국립나주박물관 새 창 열림">국립나주박물관</a></li><li><a href="#" title="국립익산박물관 새 창 열림">국립익산박물관</a></li><li><a href="#" title="국립어린이청소년도서관 새 창 열림">국립어린이청소년도서관</a></li><li><a href="#" title="국립세종도서관 새 창 열림">국립세종도서관</a></li><li><a href="#" title="국립민속국악원 새 창 열림">국립민속국악원</a></li><li><a href="#" title="국립남도국악원 새 창 열림">국립남도국악원</a></li><li><a href="#" title="국립부산국악원 새 창 열림">국립부산국악원</a></li>
+</ul>
+</div></div>
+    <div class="site-modal site-modal-2" id="site-modal-2" role="dialog" aria-modal="true" aria-labelledby="site-title-2" hidden><div class="modal-header"><h2 id="site-title-2">관련기관</h2></div><button type="button" class="modal-close-btn" aria-label="닫기"></button><div class="modal-body">
+<!-- 관련기관 링크 -->
+<ul >
+<li><a href="#" title="그랜드코리아레저(주) 새 창 열림">그랜드코리아레저(주)</a></li><li><a href="#" title="국민체육진흥공단 새 창 열림">국민체육진흥공단</a></li><li><a href="#" title="한국관광공사 새 창 열림">한국관광공사</a></li><li><a href="#" title="한국콘텐츠진흥원 새 창 열림">한국콘텐츠진흥원</a></li><li><a href="#" title="국제방송교류재단(Arirang TV) 새 창 열림">국제방송교류재단(Arirang TV)</a></li><li><a href="#" title="한국언론진흥재단 새 창 열림">한국언론진흥재단</a></li><li><a href="#" title="한국문화정보원 새 창 열림">한국문화정보원</a></li><li><a href="#" title="한국문화관광연구원 새 창 열림">한국문화관광연구원</a></li><li><a href="#" title="세종학당재단 새 창 열림">세종학당재단</a></li><li><a href="#" title="(재)예술경영지원센터 새 창 열림">(재)예술경영지원센터</a></li><li><a href="#" title="(재)한국예술인복지재단 새 창 열림">(재)한국예술인복지재단</a></li><li><a href="#" title="예술의전당 새 창 열림">예술의전당</a></li><li><a href="#" title="(재)국악방송 새 창 열림">(재)국악방송</a></li><li><a href="#" title="(재)한국공예·디자인문화진흥원 새 창 열림">(재)한국공예·디자인문화진흥원</a></li><li><a href="#" title="한국문화예술교육진흥원 새 창 열림">한국문화예술교육진흥원</a></li><li><a href="#" title="국립박물관문화재단 새 창 열림">국립박물관문화재단</a></li><li><a href="#" title="영상물등급위원회 새 창 열림">영상물등급위원회</a></li><li><a href="#" title="한국영상자료원 새 창 열림">한국영상자료원</a></li><li><a href="#" title="게임물관리위원회 새 창 열림">게임물관리위원회</a></li><li><a href="#" title="한국저작권위원회 새 창 열림">한국저작권위원회</a></li><li><a href="#" title="한국출판문화산업진흥원 새 창 열림">한국출판문화산업진흥원</a></li><li><a href="#" title="한국문학번역원 새 창 열림">한국문학번역원</a></li><li><a href="#" title="한국문화진흥(주) 새 창 열림">한국문화진흥(주)</a></li><li><a href="#" title="대한체육회 새 창 열림">대한체육회</a></li><li><a href="#" title="한국체육산업개발(주) 새 창 열림">한국체육산업개발(주)</a></li><li><a href="#" title="태권도진흥재단 새 창 열림">태권도진흥재단</a></li><li><a href="#" title="대한장애인체육회 새 창 열림">대한장애인체육회</a></li><li><a href="#" title="한국도박문제예방치유원 새 창 열림">한국도박문제예방치유원</a></li><li><a href="#" title="한국저작권보호원 새 창 열림">한국저작권보호원</a></li><li><a href="#" title="한국문화예술위원회 새 창 열림">한국문화예술위원회</a></li><li><a href="#" title="영화진흥위원회 새 창 열림">영화진흥위원회</a></li><li><a href="#" title="국립아시아문화전당재단 새 창 열림">국립아시아문화전당재단</a></li><li><a href="#" title="(재)스포츠윤리센터 새 창 열림">(재)스포츠윤리센터</a></li><li><a href="#" title="한국스포츠레저(주) 새 창 열림">한국스포츠레저(주)</a></li>
+</ul>
+<ul >
+<li><a href="#" title="한국문화예술회관연합회 새 창 열림">한국문화예술회관연합회</a></li><li><a href="#" title="(재)국립발레단 새 창 열림">(재)국립발레단</a></li><li><a href="#" title="(재)국립오페라단 새 창 열림">(재)국립오페라단</a></li><li><a href="#" title="(재)국립정동극장 새 창 열림">(재)국립정동극장</a></li><li><a href="#" title="(재)국립합창단 새 창 열림">(재)국립합창단</a></li><li><a href="#" title="(재)국립극단 새 창 열림">(재)국립극단</a></li><li><a href="#" title="서울예술단 새 창 열림">서울예술단</a></li><li><a href="#" title="한국도핑방지위원회 새 창 열림">한국도핑방지위원회</a></li><li><a href="#" title="(재)한국국제문화교류진흥원 새 창 열림">(재)한국국제문화교류진흥원</a></li><li><a href="#" title="(재)전통공연예술진흥재단 새 창 열림">(재)전통공연예술진흥재단</a></li><li><a href="#" title="(사)한국잡지협회 새 창 열림">(사)한국잡지협회</a></li><li><a href="#" title="(사)한국대학스포츠협의회 새 창 열림">(사)한국대학스포츠협의회</a></li><li><a href="#" title="국립현대무용단 새 창 열림">국립현대무용단</a></li><li><a href="#" title="(재)국립심포니오케스트라 새 창 열림">(재)국립심포니오케스트라</a></li><li><a href="#" title="(재)한국장애인문화예술원 새 창 열림">(재)한국장애인문화예술원</a></li><li><a href="#" title="국립한국문학관 새 창 열림">국립한국문학관</a></li><li><a href="#" title="(재)지역문화진흥원 새 창 열림">(재)지역문화진흥원</a></li><li><a href="#" title="(사)대한민국농구협회 새 창 열림">(사)대한민국농구협회</a></li><li><a href="#" title="(사)대한바둑협회 새 창 열림">(사)대한바둑협회</a></li><li><a href="#" title="(사)대한배구협회 새 창 열림">(사)대한배구협회</a></li><li><a href="#" title="(사)대한씨름협회 새 창 열림">(사)대한씨름협회</a></li><li><a href="#" title="(사)대한야구소프트볼협회 새 창 열림">(사)대한야구소프트볼협회</a></li><li><a href="#" title="(사)대한축구협회 새 창 열림">(사)대한축구협회</a></li><li><a href="#" title="(재)국립세계문자박물관 새 창 열림">(재)국립세계문자박물관</a></li><li><a href="#" title="2027충청권 하계세계 대학경기대회조직위원회 새 창 열림">2027충청권 하계세계 대학경기대회조직위원회</a></li><li><a href="#" title="국기원 새 창 열림">국기원</a></li><li><a href="#" title="뉴스통신진흥회 새 창 열림">뉴스통신진흥회</a></li><li><a href="#" title="한국문화원연합회 새 창 열림">한국문화원연합회</a></li><li><a href="#" title="(사)국어문화원연합회 새 창 열림">(사)국어문화원연합회</a></li><li><a href="#" title="(사)한국음악실연자연합회 새 창 열림">(사)한국음악실연자연합회</a></li><li><a href="#" title="(사)한국음악저작권협회 새 창 열림">(사)한국음악저작권협회</a></li><li><a href="#" title="(사)한국문학예술저작권협회 새 창 열림">(사)한국문학예술저작권협회</a></li><li><a href="#" title="(사)한국방송실연자권리협회 새 창 열림">(사)한국방송실연자권리협회</a></li><li><a href="#" title="(사)함께하는음악저작권협회 새 창 열림">(사)함께하는음악저작권협회</a></li><li><a href="#" title="(사)한국프로스포츠협회 새 창 열림">(사)한국프로스포츠협회</a></li><li><a href="#" title="(재)한국기원 새 창 열림">(재)한국기원</a></li><li><a href="#" title="대한근대5종연맹 새 창 열림">대한근대5종연맹</a></li><li><a href="#" title="대한당구연맹 새 창 열림">대한당구연맹</a></li><li><a href="#" title="대한럭비협회 새 창 열림">대한럭비협회</a></li><li><a href="#" title="대한레슬링협회 새 창 열림">대한레슬링협회</a></li><li><a href="#" title="대한루지경기연맹 새 창 열림">대한루지경기연맹</a></li><li><a href="#" title="대한민국댄스스포츠연맹 새 창 열림">대한민국댄스스포츠연맹</a></li><li><a href="#" title="대한민국족구협회 새 창 열림">대한민국족구협회</a></li><li><a href="#" title="대한바이애슬론연맹 새 창 열림">대한바이애슬론연맹</a></li><li><a href="#" title="대한배드민턴협회 새 창 열림">대한배드민턴협회</a></li><li><a href="#" title="대한복싱협회 새 창 열림">대한복싱협회</a></li><li><a href="#" title="대한봅슬레이스켈레톤경기연맹 새 창 열림">대한봅슬레이스켈레톤경기연맹</a></li><li><a href="#" title="대한빙상경기연맹 새 창 열림">대한빙상경기연맹</a></li><li><a href="#" title="대한사격연맹 새 창 열림">대한사격연맹</a></li><li><a href="#" title="대한산악연맹 새 창 열림">대한산악연맹</a></li><li><a href="#" title="대한세팍타크로협회 새 창 열림">대한세팍타크로협회</a></li><li><a href="#" title="대한소프트테니스협회 새 창 열림">대한소프트테니스협회</a></li><li><a href="#" title="대한수영연맹 새 창 열림">대한수영연맹</a></li><li><a href="#" title="대한스쿼시연맹 새 창 열림">대한스쿼시연맹</a></li><li><a href="#" title="대한스키협회 새 창 열림">대한스키협회</a></li><li><a href="#" title="대한아이스하키협회 새 창 열림">대한아이스하키협회</a></li><li><a href="#" title="대한양궁협회 새 창 열림">대한양궁협회</a></li><li><a href="#" title="대한에어로빅힙합협회 새 창 열림">대한에어로빅힙합협회</a></li><li><a href="#" title="대한역도연맹 새 창 열림">대한역도연맹</a></li><li><a href="#" title="대한요트협회 새 창 열림">대한요트협회</a></li><li><a href="#" title="대한우슈협회 새 창 열림">대한우슈협회</a></li><li><a href="#" title="대한유도회 새 창 열림">대한유도회</a></li><li><a href="#" title="대한육상연맹 새 창 열림">대한육상연맹</a></li><li><a href="#" title="대한사이클연맹 새 창 열림">대한사이클연맹</a></li><li><a href="#" title="대한조정협회 새 창 열림">대한조정협회</a></li><li><a href="#" title="대한철인3종협회 새 창 열림">대한철인3종협회</a></li><li><a href="#" title="대한체조협회 새 창 열림">대한체조협회</a></li><li><a href="#" title="대한카누연맹 새 창 열림">대한카누연맹</a></li><li><a href="#" title="대한컬링연맹 새 창 열림">대한컬링연맹</a></li><li><a href="#" title="대한탁구협회 새 창 열림">대한탁구협회</a></li><li><a href="#" title="대한태권도협회 새 창 열림">대한태권도협회</a></li><li><a href="#" title="대한테니스협회 새 창 열림">대한테니스협회</a></li><li><a href="#" title="대한펜싱협회 새 창 열림">대한펜싱협회</a></li><li><a href="#" title="대한하키협회 새 창 열림">대한하키협회</a></li><li><a href="#" title="대한핸드볼협회 새 창 열림">대한핸드볼협회</a></li><li><a href="#" title="동학농민혁명기념재단 새 창 열림">동학농민혁명기념재단</a></li><li><a href="#" title="사단법인 스페셜올림픽코리아 새 창 열림">사단법인 스페셜올림픽코리아</a></li><li><a href="#" title="재단법인 국립문화공간재단 새 창 열림">재단법인 국립문화공간재단</a></li><li><a href="#" title="(사)세종대왕기념사업회 새 창 열림">(사)세종대왕기념사업회</a></li>
+</ul>
+<!-- //관련기관 링크 -->
+</div></div>
+    <div class="site-modal site-modal-3" id="site-modal-3" role="dialog" aria-modal="true" aria-labelledby="site-title-3" hidden><div class="modal-header"><h2 id="site-title-3">정부기관</h2></div><button type="button" class="modal-close-btn" aria-label="닫기"></button><div class="modal-body">
+<!-- 관련기관 링크 -->
+<ul >
+<li><a href="#" title="재정경제부 새창 열기">재정경제부</a></li>
+<li><a href="#" title="과학기술정보통신부 새창 열기">과학기술정보통신부</a></li>
+<li><a href="#" title="교육부 새창 열기">교육부</a></li>
+<li><a href="#" title="외교부 새창 열기">외교부</a></li>
+<li><a href="#" title="통일부 새창 열기">통일부</a></li>
+<li><a href="#" title="법무부 새창 열기">법무부</a></li>
+<li><a href="#" title="국방부 새창 열기">국방부</a></li>
+<li><a href="#" title="행정안전부 새창 열기">행정안전부</a></li>
+<li><a href="#" title="국가보훈부 새창 열기">국가보훈부</a></li>
+<li><a href="#" title="농림축산식품부 새창 열기">농림축산식품부</a></li>
+<li><a href="#" title="산업통상부 새창 열기">산업통상부</a></li>
+<li><a href="#" title="보건복지부 새창 열기">보건복지부</a></li>
+<li><a href="#" title="기후에너지환경부 새창 열기">기후에너지환경부</a></li>
+<li><a href="#" title="고용노동부 새창 열기">고용노동부</a></li>
+<li><a href="#" title="성평등가족부 새창 열기">성평등가족부</a></li>
+<li><a href="#" title="국토교통부 새창 열기">국토교통부</a></li>
+<li><a href="#" title="해양수산부 새창 열기">해양수산부</a></li>
+<li><a href="#" title="중소벤처기업부 새창 열기">중소벤처기업부</a></li>
+</ul>
+<p class="c-btn ac"><a class="krds-btn medium tertiary" href="#" title="정부기관 누리집 더보기 새 창 열림">더보기<i class="svg-icon ico-go"></i></a></p>
+<!-- //관련기관 링크 -->
+</div></div>
+
+    <!---------------------------------- 모달 끝 ------------------------------------>
+
+    <!-- 스와이퍼 라이브러리 js -->
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <!-- 제이쿼리 라이브러리 js -->
+    
+    <!-- 스크립트 js -->
+    <script defer src="js/script.js"></script>
+  
+<div class="menu-backdrop" hidden></div>
+<div class="language-popover" id="language-popover" hidden>
+ <p><span>현재 언어</span><strong>한국어</strong></p>
+ <ul><li><a href="#">English (영어)</a></li><li><a href="#">中文 (중국어)</a></li><li><a href="#">日本語 (일본어)</a></li></ul>
+</div>
+<section class="search-dialog" id="search-dialog" role="dialog" aria-modal="true" aria-label="통합검색" hidden>
+ <button class="dialog-close" type="button" aria-label="닫기"></button>
+ <div class="search-scroll"><div class="search-inner"><form class="search-form"><label for="search-input">검색어를 입력해주세요</label><div class="search-input-wrap"><input id="search-input" type="text" placeholder="검색어를 입력해주세요." autocomplete="off"><button type="button" class="search-clear" aria-label="삭제" hidden></button><button type="submit" class="search-submit" aria-label="검색"></button></div></form>
+ <div class="search-columns"><section><h3>인기 검색어</h3><ol><li><a href="#">문화</a><span aria-hidden="true">-</span></li><li><a href="#">지원</a><span aria-hidden="true">-</span></li><li><a href="#">계획</a><span aria-hidden="true"><i class=rank-up>1</i></span></li><li><a href="#">체육</a><span aria-hidden="true"><i class=rank-down>1</i></span></li><li><a href="#">기관</a><span aria-hidden="true">-</span></li><li><a href="#">평가</a><span aria-hidden="true">-</span></li><li><a href="#">지원사업</a><span aria-hidden="true">-</span></li><li><a href="#">,차5</a><span aria-hidden="true">-</span></li><li><a href="#">디지털</a><span aria-hidden="true">-</span></li><li><a href="#">문화예술교육</a><span aria-hidden="true"><i class=rank-up>new</i></span></li></ol></section><section><h3>최근 검색어</h3><p>최근 검색어가 없습니다.</p><button class="clear-recent" type="button">최근 검색어 전체 삭제</button></section></div></div></div>
+</section>
+<section class="display-dialog" id="display-dialog" role="dialog" aria-modal="true" aria-labelledby="display-title" hidden>
+ <div class="display-card"><button class="dialog-close" type="button" aria-label="닫기"></button><h2 id="display-title">글자·화면 표시 설정</h2><div class="display-options"><fieldset class="scale-options"><legend>글자·화면 표시 설정</legend><label><input type="radio" name="scale" value="small">작게</label><label><input type="radio" name="scale" value="medium" checked>보통</label><label><input type="radio" name="scale" value="large">조금 크게</label><label><input type="radio" name="scale" value="xlarge">크게</label><label><input type="radio" name="scale" value="xxlarge">가장 크게</label></fieldset><fieldset class="mode-options"><legend>화면 표시 모드</legend><label><img loading="lazy" decoding="async" src="img/original/img_screen_light.png" alt=""><input type="radio" name="mode" value="light" checked>기본 (밝은 배경)</label><label><img loading="lazy" decoding="async" src="img/original/img_screen_dark.png" alt=""><input type="radio" name="mode" value="dark">선명하게 (어두운 배경)</label><label><img loading="lazy" decoding="async" src="img/original/img_screen_default.png" alt=""><input type="radio" name="mode" value="default">시스템 설정</label></fieldset></div><div class="display-actions"><button type="button" class="display-reset">초기화</button><button type="button" class="display-close">닫기</button></div></div>
+</section>
+<section class="all-menu-dialog" id="all-menu-dialog" role="dialog" aria-modal="true" aria-label="전체메뉴" hidden><div class="all-menu-shell"><div class="all-menu-header"><div class="all-menu-utils"><a href="#">어린이 누리집</a><button type="button" class="mobile-language">언어변경</button></div><div class="mobile-language-links" hidden><p>현재 언어 <strong>한국어</strong></p><a href="#">English (영어)</a><a href="#">中文 (중국어)</a><a href="#">日本語 (일본어)</a></div><div class="all-menu-login"><a href="#" class="login">들어가기</a><a href="#" class="join">회원가입</a></div><button type="button" class="dialog-close" aria-label="전체메뉴 닫기"></button></div><div class="all-menu-body"><div class="all-menu-tabs"><button type="button" data-menu-section="all-section-0" class="active">정보공개</button><button type="button" data-menu-section="all-section-1">국민참여</button><button type="button" data-menu-section="all-section-2">알림·소식</button><button type="button" data-menu-section="all-section-3">문화광장</button><button type="button" data-menu-section="all-section-4">국제교류</button><button type="button" data-menu-section="all-section-5">자료공간</button><button type="button" data-menu-section="all-section-6">주요정책</button><button type="button" data-menu-section="all-section-7">문체부소개</button><button type="button" data-menu-section="all-section-8">이용안내</button></div><div class="all-menu-sections"><section id="all-section-0"><h2>정보공개</h2><div class="mobile-group"><button type="button" aria-expanded="false">정보공개안내</button><ul hidden><li><a href="#">정보공개제도 소개</a></li><li><a href="#">비공개 세부기준</a></li><li><a href="#">정보목록</a></li><li><a href="#">정보공개청구</a></li><li><a href="#">업무추진비</a></li><li><a href="#">협동조합경영공시</a></li></ul></div><a class="mobile-direct" href="#">사전정보공개</a><div class="mobile-group"><button type="button" aria-expanded="false">재정정보</button><ul hidden><li><a href="#">계약현황</a></li><li><a href="#">세입·세출 운용상황</a></li><li><a href="#">보조사업현황</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">공공데이터개방</button><ul hidden><li><a href="#">공공데이터</a></li><li><a href="#">의견수렴</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">감사·청렴자료</button><ul hidden><li><a href="#">감사결과</a></li><li><a href="#">반부패 청렴자료</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">정책실명제</button><ul hidden><li><a href="#">정책실명제 안내</a></li><li><a href="#">중점관리 대상사업</a></li><li><a href="#">국민신청실명제</a></li></ul></div></section><section id="all-section-1"><h2>국민참여</h2><a class="mobile-direct" href="#">정상화 과제 제안 창구</a><a class="mobile-direct" href="#">모두의 문화예산 국민의견 수렴</a><div class="mobile-group"><button type="button" aria-expanded="false">청년소리의 정원</button><ul hidden><li><a href="#">청년소리의 정원 소개</a></li><li><a href="#">청년에게 묻습니다</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">전자민원</button><ul hidden><li><a href="#">민원안내</a></li><li><a href="#">민원신청</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">신고센터</button><ul hidden><li><a href="#">갑질피해신고</a></li><li><a href="#">스포츠윤리센터</a></li><li><a href="#">부패·공익 신고</a></li><li><a href="#">공직자종교차별신고</a></li><li><a href="#">예술인권리침해 신고</a></li><li><a href="#">성희롱·성폭력 신고·상담</a></li><li><a href="#">안전신고</a></li><li><a href="#">보조금 부조리 신고</a></li><li><a href="#">암표신고</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">적극행정</button><ul hidden><li><a href="#">우수사례</a></li><li><a href="#">국민참여</a></li><li><a href="#">제도소개</a></li></ul></div><a class="mobile-direct" href="#">특별성과포상 추천</a><div class="mobile-group"><button type="button" aria-expanded="false">규제개혁</button><ul hidden><li><a href="#">규제개혁과제</a></li><li><a href="#">규제개혁 건의</a></li><li><a href="#">규제입증요청</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">국민신문고</button><ul hidden><li><a href="#">묻고답하기</a></li><li><a href="#">국민제안</a></li><li><a href="#">예산낭비신고</a></li><li><a href="#">정책참여</a></li><li><a href="#">110수어/채팅상담</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">소통공간</button><ul hidden><li><a href="#">행정서비스헌장</a></li><li><a href="#">누리집 개선의견</a></li></ul></div></section><section id="all-section-2"><h2>알림·소식</h2><div class="mobile-group"><button type="button" aria-expanded="false">알림</button><ul hidden><li><a href="#">공지</a></li><li><a href="#">인사</a></li><li><a href="#">채용정보</a></li><li><a href="#">입찰정보</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">보도·뉴스</button><ul hidden><li><a href="#">보도자료</a></li><li><a href="#">언론보도설명·정정</a></li><li><a href="#">사진뉴스</a></li><li><a href="#">동영상뉴스</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">포상 후보자 접수</button><ul hidden><li><a href="#">문화예술발전 유공 포상</a></li><li><a href="#">문화예술회관발전상</a></li><li><a href="#">대한민국장애인문화예술대상</a></li></ul></div><a class="mobile-direct" href="#">소식지</a></section><section id="all-section-3"><h2>문화광장</h2><a class="mobile-direct" href="#">지역축제</a><a class="mobile-direct" href="#">문화예술공연</a><a class="mobile-direct" href="#">추천도서</a><a class="mobile-direct" href="#">체육행사</a><a class="mobile-direct" href="#">문화지원사업</a></section><section id="all-section-4"><h2>국제교류</h2><a class="mobile-direct" href="#">문화원 안내</a><a class="mobile-direct" href="#">문화원 활동</a><a class="mobile-direct" href="#">해외문화동향</a></section><section id="all-section-5"><h2>자료공간</h2><a class="mobile-direct" href="#">예산자료</a><div class="mobile-group"><button type="button" aria-expanded="false">법령자료</button><ul hidden><li><a href="#">현행법령</a></li><li><a href="#">훈령·예규·고시</a></li><li><a href="#">입법·행정예고</a></li><li><a href="#">표준계약서</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">현황자료</button><ul hidden><li><a href="#">비영리법인현황</a></li><li><a href="#">국가도서관통계현황</a></li><li><a href="#">다문화프로그램 현황</a></li><li><a href="#">방송영상독립제작사 신고현황</a></li><li><a href="#">작은도서관 현황</a></li><li><a href="#">정기간행물 등록관리 현황</a></li><li><a href="#">출판사·인쇄사 등록현황</a></li></ul></div><a class="mobile-direct" href="#">통계자료</a><a class="mobile-direct" href="#">연구자료</a></section><section id="all-section-6"><h2>주요정책</h2><a class="mobile-direct" href="#">업무계획</a><div class="mobile-group"><button type="button" aria-expanded="false">국정성과</button><ul hidden><li><a href="#">정부출범 1주년 성과</a></li><li><a href="#">대표 국정성과</a></li><li><a href="#">국정성과 목록</a></li><li><a href="#">범정부 국정성과 보기</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">분야별 정책</button><ul hidden><li><a href="#">전체</a></li><li><a href="#">기획조정·지원</a></li><li><a href="#">문화예술</a></li><li><a href="#">종무</a></li><li><a href="#">국제문화홍보</a></li><li><a href="#">콘텐츠·저작권·미디어</a></li><li><a href="#">관광</a></li><li><a href="#">국민소통</a></li><li><a href="#">체육</a></li><li><a href="#">기타</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">정책소통</button><ul hidden><li><a href="#">대학생기자단</a></li><li><a href="#">홍보물</a></li></ul></div></section><section id="all-section-7"><h2>문체부소개</h2><div class="mobile-group"><button type="button" aria-expanded="false">기관소개</button><ul hidden><li><a href="#">연혁</a></li><li><a href="#">상징(MI)</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">열린장관실</button><ul hidden><li><a href="#">장관과의 대화방</a></li><li><a href="#">활동방</a></li><li><a href="#">장·차관소개</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">조직안내</button><ul hidden><li><a href="#">조직도</a></li><li><a href="#">직원검색</a></li><li><a href="#">소속기관 안내</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">청사안내</button><ul hidden><li><a href="#">찾아오시는 길</a></li><li><a href="#">층별안내</a></li></ul></div></section><section id="all-section-8"><h2>이용안내</h2><a class="mobile-direct" href="#">전체 메뉴</a><div class="mobile-group"><button type="button" aria-expanded="false">운영정책</button><ul hidden><li><a href="#">개인정보 처리방침</a></li><li><a href="#">저작권정책</a></li><li><a href="#">행정서비스헌장</a></li><li><a href="#">웹 접근성 품질마크</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">누리집 안내</button><ul hidden><li><a href="#">누리집 이용안내</a></li><li><a href="#">읽기 전용 프로그램 안내</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">공공누리</button><ul hidden><li><a href="#">공공누리 제도 안내</a></li><li><a href="#">공공누리 유형 안내</a></li><li><a href="#">공공누리 이용 안내</a></li></ul></div><div class="mobile-group"><button type="button" aria-expanded="false">서비스 안내</button><ul hidden><li><a href="#">정보구독서비스</a></li><li><a href="#">전자우편서비스</a></li></ul></div><a class="mobile-direct" href="#">배너모음</a><a class="mobile-direct" href="#">회원탈퇴</a></section></div></div></div></section><button type="button" class="go-top" aria-label="위로" title="페이지 위로 이동" hidden></button>
+
+</body>
+</html>

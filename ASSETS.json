@@ -1,0 +1,72 @@
+{
+  "source": "https://www.mcst.go.kr/site/main.jsp",
+  "checked": "2026-09-10",
+  "added": [
+    {
+      "file": "font/PretendardGOV-Regular.subset.woff2",
+      "url": "https://www.mcst.go.kr/site/font/PretendardGOV-Regular.subset.woff2",
+      "bytes": 263044
+    },
+    {
+      "file": "font/PretendardGOV-Bold.subset.woff2",
+      "url": "https://www.mcst.go.kr/site/font/PretendardGOV-Bold.subset.woff2",
+      "bytes": 267248
+    },
+    {
+      "file": "img/original/img_screen_light.png",
+      "url": "https://www.mcst.go.kr/site/images/common/img_screen_light.png",
+      "bytes": 2646
+    },
+    {
+      "file": "img/original/img_screen_dark.png",
+      "url": "https://www.mcst.go.kr/site/images/common/img_screen_dark.png",
+      "bytes": 2771
+    },
+    {
+      "file": "img/original/img_screen_default.png",
+      "url": "https://www.mcst.go.kr/site/images/common/img_screen_default.png",
+      "bytes": 2813
+    },
+    {
+      "file": "img/original/input_dimed_bg.png",
+      "url": "https://www.mcst.go.kr/site/images/common/input_dimed_bg.png",
+      "bytes": 1004
+    },
+    {
+      "file": "img/original/ico_all.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_all.svg",
+      "bytes": 827
+    },
+    {
+      "file": "img/original/ico_delete.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_delete.svg",
+      "bytes": 697
+    },
+    {
+      "file": "img/original/ico_angle.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_angle.svg",
+      "bytes": 439
+    },
+    {
+      "file": "img/original/ico_close.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_close.svg",
+      "bytes": 693
+    },
+    {
+      "file": "img/original/ico_sch.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_sch.svg",
+      "bytes": 904
+    },
+    {
+      "file": "img/original/ico_swiper_stop.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_swiper_stop.svg",
+      "bytes": 619
+    },
+    {
+      "file": "img/original/ico_swiper_play.svg",
+      "url": "https://www.mcst.go.kr/site/images/icon/ico_swiper_play.svg",
+      "bytes": 445
+    }
+  ],
+  "existing": "기존 img/ 및 font/ 자산 보존"
+}
